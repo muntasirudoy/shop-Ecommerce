@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/component/Common/-card1.scss",
+        "../scss/abstracts/_mixin.scss",
+        "../scss/abstracts/_variables.scss",
+        "../scss/abstracts/_variables.scss"
+    ],
+    "names": [],
+    "file": "-card1.css"
+}

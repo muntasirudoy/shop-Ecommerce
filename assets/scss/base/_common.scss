@@ -1,0 +1,43 @@
+@import "../abstracts/variables";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+
+ul,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    background: $color7;
+}
+.space {
+    display: flex;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.items{
+    display: flex;
+  }
+
+@media (min-width: 576px) { 
+    .container{
+        max-width: 1440px !important;
+    }
+ }

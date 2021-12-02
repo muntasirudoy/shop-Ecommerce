@@ -1,0 +1,99 @@
+
+@import "./variables";
+
+
+// section heading for all
+
+@mixin heading{
+    @include fonts ($roboto, 38px, 1 , 600, $color2);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+// font mixin
+@mixin fonts($fname,$fsize,$fline, $fweight,$fcolor) {
+    font-family: $fname;
+    font-size: $fsize;
+    line-height: $fline;
+    font-weight: $fweight;
+    color: $fcolor;
+   
+}
+
+// banner mixin
+@mixin bannerSize{
+    width: 100%;
+    background: $color12;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+// banner card 1 mixin
+@mixin  card1 {
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+    padding: 10px 15px;
+    background: #f8f9fa;
+    border-radius: 35px;
+    height: 60px;
+    width: 250px;
+    box-shadow: $bs-b-3;
+    animation: card1 3s linear infinite;
+ }
+
+    @keyframes card1 {
+        0%, 100% {
+            bottom: 20px;
+          }
+         50% {
+            bottom: 60px;
+          }
+      }
+ 
+// banner card 2 mixin
+@mixin  card2 {
+    position: absolute;
+    top: -9px;
+    right: 8%;
+    padding: 16px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    height: 120px;
+    width: 110px;
+    box-shadow: $bs-b-3;
+ }
+
+   
+// category card 
+
+@mixin categoryCard ($c-c-w,$c-c-h,$c-c-bg,$c-c-br) {
+    width: $c-c-w;
+    height: $c-c-h;
+    background: $c-c-bg;
+    border-radius: $c-c-br;
+    border: 1px solid $color5;
+    
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover{
+        transform: translateY(-5px);
+    }
+}
+
+
+
+
+
+
+
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}  
+}
+
+

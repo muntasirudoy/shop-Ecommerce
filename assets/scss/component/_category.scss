@@ -1,0 +1,40 @@
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+
+
+
+#category{
+    margin-top: 100px;
+      .heading{
+       h2{
+       @include heading
+       }
+      }
+    .category-plate{
+        width: 90%;
+        margin: 220px auto 0px;
+        background: url(../images/category-card/bg1.png) center no-repeat;
+        background-size: cover;
+        border-radius: 100px;
+        height: 130px;
+        position: relative;
+       .overlay{
+           width: 100%;
+           height: 100%;
+           position: absolute;
+           top: 0;
+           left: 0;
+           background: rgba(59, 183, 126, 0.85);
+           border-radius: 100px;
+           
+       }
+        .cards{
+        width: 100%;
+        margin-top: -140px;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 70px;
+        z-index: 111;
+        }
+    }
+}

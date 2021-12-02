@@ -1,0 +1,67 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixin";
+
+
+// roboto typography 400
+
+.hd-top1{
+    @include fonts($roboto,14px,16.41px,400,$color3);
+}
+.hd-top2{
+    @include fonts($roboto,16px,17.58px,500,$color3);
+}
+.sm-r1{
+    @include fonts($roboto,12px,14px,500,$color1);
+}
+
+
+
+
+//  for banner 
+.bh-2{
+    @include fonts($roboto,14px,14px,600,$color13);
+    background: $color14;
+    padding: 10px 20px;
+    border-radius: 100px;
+    display: inline-block;
+    box-shadow: $bs-r-3
+
+}
+.bh-1{
+    @include fonts($popins,54px,130%,700,$color2);
+    margin-top: 10px;
+}
+
+.bp-1{
+    @include fonts($roboto,16px,1.6,400,$color3);
+    margin-top: 25px;
+    letter-spacing: .5px;
+}
+
+// for banner card1
+
+.bc-h-1{
+    @include fonts($popins,14px,0,500,$color2);
+    display: inline-block;
+    margin-left: 47px
+}
+.bc-p-1{
+    @include fonts($roboto,12px,1.2,400,$color3);
+    letter-spacing: .5px;
+    margin-left: 47px;
+}
+
+// banner card 2
+.bc-h-2{
+    @include fonts($popins,24px,160%,600,$color2);
+    display: inline-block;
+}
+.bc-p-2{
+    @include fonts($roboto,12px,1.4,400,$color3);
+    letter-spacing: .5px;
+}
+
+
+
+////////////////////////
+
