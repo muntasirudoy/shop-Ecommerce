@@ -28,13 +28,13 @@
 
 }
 .bh-1{
-    @include fonts($popins,54px,130%,700,$color2);
+    @include fonts($popins,44px,130%,700,$color2);
     margin-top: 10px;
 }
 
 .bp-1{
     @include fonts($roboto,16px,1.6,400,$color3);
-    margin-top: 25px;
+    margin-top: 20px;
     letter-spacing: .5px;
 }
 

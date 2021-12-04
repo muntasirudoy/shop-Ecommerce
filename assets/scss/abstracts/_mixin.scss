@@ -5,11 +5,18 @@
 // section heading for all
 
 @mixin heading{
-    @include fonts ($roboto, 38px, 1 , 600, $color2);
-    margin-bottom: 50px;
-    text-align: center;
+    @include fonts ($roboto, 32px, 1 , 500, $color2);
+    margin-bottom: 30px;
 }
-
+// button 1
+@mixin button1 ($pd,$br,$bg) {
+    @include fonts($roboto,18px,1.3,400,$color1);
+    padding: $pd;
+    border-radius: $br;
+    background: $bg;
+    display: inline-block;
+    transition: 0.3s;
+}
 
 // font mixin
 @mixin fonts($fname,$fsize,$fline, $fweight,$fcolor) {
@@ -40,7 +47,7 @@
     height: 60px;
     width: 250px;
     box-shadow: $bs-b-3;
-    animation: card1 3s linear infinite;
+    animation: card1 2s linear infinite;
  }
 
     @keyframes card1 {
@@ -48,7 +55,7 @@
             bottom: 20px;
           }
          50% {
-            bottom: 60px;
+            bottom: 30px;
           }
       }
  
@@ -67,20 +74,144 @@
 
    
 // category card 
-
 @mixin categoryCard ($c-c-w,$c-c-h,$c-c-bg,$c-c-br) {
     width: $c-c-w;
     height: $c-c-h;
     background: $c-c-bg;
     border-radius: $c-c-br;
     border: 1px solid $color5;
-    
     transition: 0.3s;
     cursor: pointer;
     &:hover{
         transform: translateY(-5px);
     }
 }
+
+
+   
+// Product card 
+@mixin productCard ($p-c-w,$p-c-h,$p-c-bg,$p-c-br) {
+    width: $p-c-w;
+    height: $p-c-h;
+    background: $p-c-bg;
+    border-radius: $p-c-br;
+    border: 1px solid $color5;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 7px;
+    position: relative;
+    padding-bottom: 20px;
+    margin-top: 20px;
+
+    .product-review{
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        }
+     .product-image{
+         width: 100%;
+         height: 225px;
+         border-top-right-radius: 6px;
+         border-top-left-radius: 6px;
+         display: flex;
+         justify-content: center;
+         align-items: flex-end;
+         padding: 15px 15px 0px 15px;
+         img{
+             width: 100%;
+             height: 100%;
+         }
+     }
+     .product-name{
+         text-align: center;
+         margin-top: 15px;
+         width: 100%;
+         height: 50px;
+     
+         h2{
+            @include fonts($roboto,18px ,28px ,500 ,$color2 )
+         }
+         p{
+             @include fonts($roboto,14px ,16px ,400 ,$color4 )
+         }
+        
+     }
+     .product-price{
+         margin-top: 10px;
+         text-align: center;
+         height: 50px;
+         width: 100%;
+         h2{
+            @include fonts($roboto,24px ,32px ,700 ,$color2 )
+         }
+         h5{
+             @include fonts($roboto,16px ,18px ,400 ,$color3 )
+         }
+     }
+      .product-button{
+          margin-top: 15px;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+
+          .wishlist{
+            padding: 6px 12px;
+            background: $color1;
+            border-radius: 10px;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+            transition: 0.3s;
+            border: 1px solid $color5;
+            color: $color13;
+            font-weight: 600;
+            &:hover{
+                background: $color4;
+                color: $color1;
+            }
+        
+        }
+          .add-cart{
+              padding: 6px 24px;
+              background: $color1;
+              font-size: 16px;
+              color: $color4;
+              font-weight: 500;
+              transition: 0.3s;
+              border: 1px solid $color5;
+              &:hover{
+                background: $color4;
+                color: $color1;
+            }
+          }
+          .quick-view{
+              padding: 6px 12px;
+              background: $color1;
+              border-radius: 10px;
+              border-bottom-left-radius: 0;
+              border-top-left-radius: 0;
+              transition: 0.3s;
+              border: 1px solid $color5;
+              color: $color13;
+              font-weight: 600;   
+              &:hover{
+                background: $color4;
+                color: $color1;
+            } 
+          }
+      }
+
+    &:hover{
+        box-shadow: $bs-b-2;
+    }
+   
+   
+}
+
+
 
 
 

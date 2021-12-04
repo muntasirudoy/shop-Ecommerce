@@ -1,0 +1,20 @@
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+
+
+.best-selling{
+        .heading{
+            h2{
+            @include heading;
+            }
+    }
+    .all-selling-card{
+        display: flex;
+       flex-wrap: wrap;
+        justify-content: space-between;
+        .selling-card{
+            @include productCard (265px,100%,$color1,10px)
+        }
+
+    } 
+}

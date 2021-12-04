@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AC6CI,UAAU,CAAV,KAAU;EACN,EAAE,EAAE,IAAI;IACJ,MAAM,EAAE,IAAI;;EAEf,GAAG;IACA,MAAM,EAAE,IAAI",
+    "sources": [
+        "../scss/component/best-selling-product.scss",
+        "../scss/abstracts/_mixin.scss",
+        "../scss/abstracts/_variables.scss",
+        "../scss/abstracts/_variables.scss"
+    ],
+    "names": [],
+    "file": "best-selling-product.css"
+}
