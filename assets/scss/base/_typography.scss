@@ -88,3 +88,14 @@
 .hc-p-1{
     @include fonts($roboto,14px,1,400,$color4);
 }
+
+
+// Recent add, sale, trend
+.r-h-1{
+    @include fonts($roboto,16px,28px,500,$color2);
+    margin-top: 7px;
+}
+.r-h-2{
+    @include fonts($roboto,20px,28px,500,$color4);
+    margin-top: 7px;
+}

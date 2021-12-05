@@ -1,0 +1,83 @@
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+
+
+
+
+.recent-add-sale-trend{
+    .items{
+        justify-content: space-between;
+        .trending{
+            width: 32%;
+            .heading{
+                h2{
+                @include heading;
+                border-bottom: 3px solid $color5;
+                padding-bottom: 15px;
+                position: relative;
+                &::after{
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  bottom: -3px;
+                  width:25%;
+                  height: 3px;
+                  background: $color4
+                }
+                }
+            }
+            .t-a-s-card{
+                @include recent-add-sale-trend ;
+            }
+          
+        }
+        .recent-sale{
+            width: 32%;
+            .heading{
+                h2{
+                @include heading;
+                border-bottom: 3px solid $color5;
+                padding-bottom: 15px;
+                position: relative;
+                &::after{
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  bottom: -3px;
+                  width:25%;
+                  height: 3px;
+                  background: $color4
+                }
+                }
+            }
+            .t-a-s-card{
+                @include recent-add-sale-trend ;
+            }
+           
+        }
+        .recent-add{
+            width: 32%;
+            .heading{
+                h2{
+                @include heading;
+                border-bottom: 3px solid $color5;
+                padding-bottom: 15px;
+                position: relative;
+                &::after{
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  bottom: -3px;
+                  width:25%;
+                  height: 3px;
+                  background: $color4
+                }
+                }
+            }
+            .t-a-s-card{
+                @include recent-add-sale-trend ;
+            }
+          
+        }
+    }
+}
