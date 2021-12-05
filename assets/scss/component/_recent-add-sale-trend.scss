@@ -20,14 +20,15 @@
                   position: absolute;
                   left: 0;
                   bottom: -3px;
-                  width:25%;
+                  width:30%;
                   height: 3px;
                   background: $color4
                 }
                 }
             }
             .t-a-s-card{
-                @include recent-add-sale-trend ;
+                @include recent-add-sale-trend;
+
             }
           
         }
@@ -44,7 +45,7 @@
                   position: absolute;
                   left: 0;
                   bottom: -3px;
-                  width:25%;
+                  width:30%;
                   height: 3px;
                   background: $color4
                 }
@@ -68,7 +69,7 @@
                   position: absolute;
                   left: 0;
                   bottom: -3px;
-                  width:25%;
+                  width:30%;
                   height: 3px;
                   background: $color4
                 }
