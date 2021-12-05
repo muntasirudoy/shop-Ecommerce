@@ -62,12 +62,12 @@
 }
 
 
-.pc-p-1{
-    @include fonts($popins,12px,0,500,$color2);
-    display: inline-block;
-    margin-left: 0;
-}
-
-
 ////////////////////////
 
+.bn-h{
+    @include fonts($roboto,24px,1.4,500,$color2);
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 67%;
+}
