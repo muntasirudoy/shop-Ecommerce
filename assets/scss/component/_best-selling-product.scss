@@ -7,13 +7,55 @@
             h2{
             @include heading;
             }
-    }
+            display: flex;
+            ul{
+                margin-left: auto;
+                li{
+                    display: inline-block;
+                    line-height: 3.4;
+                    padding: 0 10px;
+                    a{
+                        @include fonts($roboto,14px,1,500,$color2 )
+                    }
+                    .active{
+                        color: $color4;
+                    }
+                }
+            }
+            .view-all{
+                padding: 0 15px;
+                display:inline-block;
+                border: 1px solid $color4;
+                height: 38px;
+                line-height: 38px;
+                color: $color4;
+                font-size: 14px;
+                font-weight: 500;
+                margin-left: 20px;
+                border-radius: 10px;
+                &:hover{
+                 filter: drop-shadow(0px 0px 4px rgba(59, 183, 126, 0.35));
+                }
+            }
+
+        }
     .all-selling-card{
         display: flex;
        flex-wrap: wrap;
         justify-content: space-between;
         .selling-card{
-            @include productCard (265px,100%,$color1,10px)
+            @include productCard (265px,100%,$color1,10px,center,center)
+        }
+        .offer{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            padding: 3px 10px;
+            background:$color13;
+            border-radius: 10px;
+            font-size: 12px;
+            color: $color1;
+            font-weight: 600;
         }
 
     } 

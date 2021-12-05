@@ -62,6 +62,12 @@
 }
 
 
+.pc-p-1{
+    @include fonts($popins,12px,0,500,$color2);
+    display: inline-block;
+    margin-left: 0;
+}
+
 
 ////////////////////////
 

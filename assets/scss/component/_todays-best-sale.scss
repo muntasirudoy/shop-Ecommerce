@@ -1,0 +1,85 @@
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+
+
+
+.todays-best-sale{
+    .heading{
+        display: flex;
+        justify-content: space-between;
+        h2{
+        @include heading;
+        }
+        .view-all{
+           
+            padding: 0 15px;
+            display:inline-block;
+            border: 1px solid $color4;
+            height: 38px;
+            line-height: 38px;
+            color: $color4;
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 20px;
+            border-radius: 10px;
+            &:hover{
+             filter: drop-shadow(0px 0px 4px rgba(59, 183, 126, 0.35));
+            }
+        }
+    }
+    .banner{
+        width: 400px;
+        height: 472px;
+        border-radius: 10px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .all-selling-card{
+        margin-top: 30px;
+       display: flex;
+       flex-wrap: wrap;
+        justify-content: space-between;
+        .selling-card{
+            @include productCard (310px,100%,$color1,10px,left,left);
+            margin-top: 0;
+            text-align: left!important;
+            padding: 20px;
+            .product-sold{
+                width: 100%;
+                height: 6px;
+                border-radius: 10px;
+                background: $color5;
+                overflow: hidden;
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 70%;
+                    height: 100%;
+                    background: $color4;
+                }
+
+            }
+            p{
+                margin-top: 5px;
+            }
+        }
+        .offer{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            padding: 3px 10px;
+            background:$color13;
+            border-radius: 10px;
+            font-size: 12px;
+            color: $color1;
+            font-weight: 600;
+        }
+
+    } 
+}
