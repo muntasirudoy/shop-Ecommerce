@@ -51,7 +51,7 @@ body {
 }
 
 .section-padding {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 @media (min-width: 576px) {
@@ -1618,6 +1618,38 @@ body {
   width: 32%;
 }
 
+.recent-add-sale-trend .items .trending .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recent-add-sale-trend .items .trending .heading .next {
+  padding: 7px 15px;
+  border-radius: 5px;
+  background: 0px 10px 40px #fa76767a;
+  border: 1px solid #3BB77E;
+  cursor: pointer;
+  font-size: 14px;
+  color: #3BB77E;
+  height: 30px;
+  margin-left: 122px;
+}
+
+.recent-add-sale-trend .items .trending .heading .prev {
+  padding: 7px 15px;
+  border-radius: 5px;
+  background: 0px 10px 40px #fa76767a;
+  border: 1px solid #3BB77E;
+  cursor: pointer;
+  font-size: 14px;
+  color: #3BB77E;
+  height: 30px;
+}
+
 .recent-add-sale-trend .items .trending .heading h2 {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
@@ -1649,7 +1681,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #D8D8D8;
+  border: 1px solid #D8D8D8;
   padding: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1691,6 +1723,42 @@ body {
   width: 32%;
 }
 
+.recent-add-sale-trend .items .recent-sale .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recent-add-sale-trend .items .recent-sale .heading .next-prev {
+  width: 100px;
+}
+
+.recent-add-sale-trend .items .recent-sale .heading .next-prev .next {
+  padding: 7px 15px;
+  border-radius: 5px;
+  background: 0px 10px 40px #fa76767a;
+  border: 1px solid #3BB77E;
+  cursor: pointer;
+  font-size: 14px;
+  color: #3BB77E;
+  height: 30px;
+  margin-left: 100px;
+}
+
+.recent-add-sale-trend .items .recent-sale .heading .next-prev .prev {
+  padding: 7px 15px;
+  border-radius: 5px;
+  background: 0px 10px 40px #fa76767a;
+  border: 1px solid #3BB77E;
+  cursor: pointer;
+  font-size: 14px;
+  color: #3BB77E;
+  height: 30px;
+}
+
 .recent-add-sale-trend .items .recent-sale .heading h2 {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
@@ -1722,7 +1790,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #D8D8D8;
+  border: 1px solid #D8D8D8;
   padding: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1764,6 +1832,38 @@ body {
   width: 32%;
 }
 
+.recent-add-sale-trend .items .recent-add .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recent-add-sale-trend .items .recent-add .heading .next {
+  padding: 7px 15px;
+  border-radius: 5px;
+  background: 0px 10px 40px #fa76767a;
+  border: 1px solid #3BB77E;
+  cursor: pointer;
+  font-size: 14px;
+  color: #3BB77E;
+  height: 30px;
+  margin-left: 122px;
+}
+
+.recent-add-sale-trend .items .recent-add .heading .prev {
+  padding: 7px 15px;
+  border-radius: 5px;
+  background: 0px 10px 40px #fa76767a;
+  border: 1px solid #3BB77E;
+  cursor: pointer;
+  font-size: 14px;
+  color: #3BB77E;
+  height: 30px;
+}
+
 .recent-add-sale-trend .items .recent-add .heading h2 {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
@@ -1795,7 +1895,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #D8D8D8;
+  border: 1px solid #D8D8D8;
   padding: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;

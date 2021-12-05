@@ -10,6 +10,19 @@
         .trending{
             width: 32%;
             .heading{
+                display: flex;
+                justify-content: space-between;
+                    .next {
+                    // $np-w,$np-h,$np-br,$np-bg, $np-b, $np-i-s,$np-i-c 
+                    @include next(7px 15px, 5px, $bs-r-1, 1px solid $color4,14px,$color4);
+                    height: 30px;
+                    margin-left: 122px;
+                    }
+                    .prev {
+                        // $np-w,$np-h,$np-br,$np-bg, $np-b, $np-i-s,$np-i-c 
+                        @include next(7px 15px, 5px, $bs-r-1, 1px solid $color4,14px,$color4);
+                        height: 30px;
+                        }
                 h2{
                 @include heading;
                 border-bottom: 3px solid $color5;
@@ -35,6 +48,23 @@
         .recent-sale{
             width: 32%;
             .heading{
+                display: flex;
+                justify-content: space-between;
+                .next-prev{
+                      width: 100px;
+                    .next {
+                        // $np-w,$np-h,$np-br,$np-bg, $np-b, $np-i-s,$np-i-c 
+                        @include next(7px 15px, 5px, $bs-r-1, 1px solid $color4,14px,$color4);
+                        height: 30px;
+                        margin-left: 100px;
+                        }
+                        .prev {
+                            // $np-w,$np-h,$np-br,$np-bg, $np-b, $np-i-s,$np-i-c 
+                            @include next(7px 15px, 5px, $bs-r-1, 1px solid $color4,14px,$color4);
+                            height: 30px;
+                            }
+                }
+               
                 h2{
                 @include heading;
                 border-bottom: 3px solid $color5;
@@ -59,6 +89,19 @@
         .recent-add{
             width: 32%;
             .heading{
+                display: flex;
+                justify-content: space-between;
+                .next {
+                    // $np-w,$np-h,$np-br,$np-bg, $np-b, $np-i-s,$np-i-c 
+                    @include next(7px 15px, 5px, $bs-r-1, 1px solid $color4,14px,$color4);
+                    height: 30px;
+                    margin-left: 122px;
+                    }
+                    .prev {
+                        // $np-w,$np-h,$np-br,$np-bg, $np-b, $np-i-s,$np-i-c 
+                        @include next(7px 15px, 5px, $bs-r-1, 1px solid $color4,14px,$color4);
+                        height: 30px;
+                        }
                 h2{
                 @include heading;
                 border-bottom: 3px solid $color5;

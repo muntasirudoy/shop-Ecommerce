@@ -18,6 +18,28 @@
     transition: 0.3s;
 }
 
+//  Next Previous Button
+
+@mixin next($np-pd,$np-br,$np-bg, $np-b,$np-fs,$np-c) {
+    padding: $np-pd;
+    border-radius:$np-br;
+    background:$np-bg;
+    border:$np-b;
+    cursor:pointer;
+    font-size:$np-fs;
+    color: $np-c;
+}
+@mixin prev($np-w,$np-h,$np-br,$np-bg, $np-b,$np-fs,$np-c) {
+    width: $np-w;
+    height: $np-h;
+    border-radius:$np-br;
+    background:$np-bg;
+    border:$np-b;
+    font-size:$np-fs;
+    color: $np-c;
+}
+
+
 // font mixin
 @mixin fonts($fname,$fsize,$fline, $fweight,$fcolor) {
     font-family: $fname;
@@ -238,7 +260,7 @@
     margin-top: 15px;
     display: flex;
     align-items: center;
-    border: 2px solid $color5;
+    border: 1px solid $color5;
     padding: 10px;
     transition: 0.3s;
     cursor: pointer;
