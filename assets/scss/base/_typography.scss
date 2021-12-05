@@ -71,3 +71,20 @@
     left: 10%;
     width: 67%;
 }
+
+
+// hote sale
+.hc-h-1{
+    @include fonts($roboto,18px,28px,500,$color2);
+    margin-top: 10px;
+}
+
+.hc-h-2{
+    @include fonts($roboto,28px,1.6,600,$color4);
+    margin-top: 20px;
+}
+
+
+.hc-p-1{
+    @include fonts($roboto,14px,1,400,$color4);
+}

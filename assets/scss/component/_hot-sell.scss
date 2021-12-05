@@ -1,0 +1,149 @@
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+
+
+
+
+.hot-sell{
+    .heading{
+        h2{
+        @include heading;
+        }
+        display: flex;
+        justify-content: space-between;
+        .view-all{
+            padding: 0 15px;
+            display:inline-block;
+            border: 1px solid $color4;
+            height: 38px;
+            line-height: 38px;
+            color: $color4;
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 20px;
+            border-radius: 10px;
+            &:hover{
+             filter: drop-shadow(0px 0px 4px rgba(59, 183, 126, 0.35));
+            }
+    }
+}
+
+.all-hot-cards{
+    display: flex;
+    justify-content: space-between;
+}
+ .hot-card{
+     width: 420px;
+     height: 480px;
+     position: relative;
+     cursor: pointer;
+     &:hover .overlay{
+        background: rgba(5, 5, 5, 0.589);
+        
+     }
+     &:hover .image img{
+         transform: scale(1.2);
+     }
+    
+     .image{
+         width: 100%;
+         height: 330px;
+         background: black;
+         border-radius: 10px;
+         z-index: -111;
+         border-radius: 10px;
+         overflow: hidden;
+         position: relative;
+         img{
+             width: 100%;
+             height: 100%;
+             transition: 0.3s;
+         }
+         .overlay{
+             width: 100%;
+             height: 100%;
+             position: absolute;
+             left: 0;
+             top: 0;
+             transition: 0.3s;
+            
+         }
+     }
+     .details{
+         width: 350px;
+         height: 220px;
+         position: absolute;
+         bottom:43px;
+         left: 50%;
+         transform: translateX(-50%);
+         border-radius: 10px;
+         transition: 0.3s;
+         &:hover{
+             margin-top: -10px;
+         }
+         .text{
+            width: 100%;
+            height: 180px;
+            background: $color1;
+            border-radius: 10px;
+            border: 1px solid $color5;
+            box-shadow: $bs-b-3;
+            padding: 15px 25px;
+            box-sizing: border-box;
+            .product-review{
+                margin-top: 15px;
+                display: flex;
+                justify-content: flex-start;
+                i{
+                    margin-right: 10px;
+                    color: $color19;
+                }
+            }
+            .product-price-button{
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                
+                a{
+                    @include button1(10px 20px, 10px , $color4);
+                    font-size:16px;
+                    font-weight: 500;
+                    &:hover{
+                     box-shadow: $bs-b-3;
+                    }
+                }
+            }
+        }
+         .time{
+             ul{
+                display: flex;
+                justify-content: space-between;
+                padding-left: 0;
+                 li{
+                     display: inline-block;
+                     padding: 10px 20px;
+                     background: $color1;
+                     font-size: 28px;
+                     font-weight: 600;
+                     font-family: $roboto;
+                     border-radius: 10px;
+                     line-height: 1;
+                     color: $color4;
+                     box-shadow: $bs-b-3;
+                    p{
+                        font-size: 16px;
+                        font-weight: 500;
+                        font-family: $roboto;
+                        margin: 0;
+                        color: $color20;
+
+                    }
+                 }
+             }
+             
+         }
+         
+     }
+ }
+
+}
