@@ -45,3 +45,21 @@ body{
     }
  }
 
+
+
+// ---------------------------------common css copy and paste on your common scss-----------------
+.space {
+    display: flex;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+@media only screen and (min-width:1500px){
+    .ui.container{
+        width: 1440px;
+    }
+    
+}
+
+// ---------------------------------common css copy and paste on your common scss-----------------

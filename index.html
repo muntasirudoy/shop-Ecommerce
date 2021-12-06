@@ -12,10 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
-
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./accordion.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./assets/css/semantic.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 
 </head>
@@ -25,85 +23,254 @@
  <!-- ====================================================
                             navbar start
          ==================================================== -->
-         <section id="header">
-                 <div class="header-top ">
-                     <div class="container">
-                         <div class="top-content space-between">
-                            <div class="left">
-                                <p class="hd-top1">About Us  <span class="devide">|</span>  Contact Us  <span class="devide">|</span>   <span class="colorful">Helpline : 0123456789</span></p>
-                            </div>
-                            <div class="center">
-                                <p  class="hd-top2">Supper Value Deals - Save more with coupons</p>
-                            </div>
-                            <div class="right space">
-                               <select class="form-select hd-top1" aria-label="Default select example">
-                                   <option selected>Language</option>
-                                   <option value="1">English</option>
-                                   <option value="2">Bangla</option>
-                                   <option value="3">Hindi</option>
-                                 </select>
-                                 <span class="devide">|</span> 
-                                 <select class="form-select hd-top1" aria-label="Default select example">
-                                   <option selected>USD</option>
-                                   <option value="1">USD</option>
-                                   <option value="2">TK</option>
-                                   <option value="3">INR</option>
-                                 </select>
-                                      
-                            </div>
-                         </div>
-                    
-                    </div>
-                 </div>
-                 <div class="header-center ">
-                     <div class="container  space-between">
-                        <div class="logo">
-                            <a href="index.html"><img src="./assets/images/header/logo.svg" alt="logo"></a>
-                        </div>
-                        <div class="search-bar ">
-                            <form action="#">
-                                <div class="inner space">
-                                    <select class="form-select hd-top2" aria-label="Default select example">
-                                        <option selected>All Category</option>
-                                        <option value="1">Fruits</option>
-                                        <option value="2">Vagetables</option>
-                                        <option value="3">Foods</option>
-                                      </select>
-                                      <span>|</span>
-                                      <input type="text" class="form-control hd-top1"  placeholder="Search for items" >
-                                      <button type="submit" class="header-serch"><img src="./assets/images/header/search-icon.svg" alt="search-icon"></button>
-                                </div>
-                          
+      
+  <!-- ====================================================
+                            navbar start
+         ==================================================== -->
 
-                              
-                            </form>
-                        </div>
-                        <div class="purchase-info space-between">
-                            <div class="cart-button space">
-                                <span class="cash hd-top2">( $256 )</span>
-                                <div class="cart-info circle"><img src="./assets/images/header/cart-icon.svg" alt="cart-icon"> <span class="alert-no sm-r1">5</span></div>
-                            </div>
-                            
-                            <div class="fav-info circle"><img src="./assets/images/header/fav-icon.svg" alt="fav-icon"> <span class="alert-no sm-r1">9</span></div>
-                            <div class="profile space">
-                                 <div class="pic"><img src="./assets/images/header/Avatar2.png" alt="Avatar"></div>
-                                 <p class="hd-top1">Abul Kashem</p>
-                            </div>
-                        </div>
-                     </div>
-                     
-                 </div>
-            
-         </section>
-<!-- ====================================================
-                            navbar end
+  <section  class="header">
+    <div class="header-top ">
+      <div class="ui container">
+        <div class="top-content space-between">
+          <div class="left space">
+            <a class=" header-link" href="about.html">About Us</a> <span class="devide"></span>
+            <a class=" header-link" href="contact.html">Contact Us</a> <span class="devide"></span>
+            <span class="colorful ">Helpline : <a class="colorful " href="tel:0123456789">0123456789</a></span>
+          </div>
+          <div class="center">
+            <p class="top-motto">Supper Value Deals - Save more with coupons</p>
+          </div>
+          <div class="right space">
+            <div class="ui floating dropdown labeled lang-drop">
+              <span class="text">Language</span>
+              <div class="menu">
+                <div class="item">Arabic</div>
+                <div class="item">Chinese</div>
+                <div class="item">Danish</div>
+                <div class="item">Dutch</div>
+                <div class="item">English</div>
+              </div>
+            </div>
+            <span class="devide"></span>
+            <div class="ui floating dropdown labeled lang-drop">
+              <span class="text">USD</span>
+              <div class="menu">
+                <div class="item">TK</div>
+                <div class="item">TK</div>
+                <div class="item">INR</div>
+                <div class="item">INR</div>
+                <div class="item">EAN</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-center ">
+      <div class="ui container ">
+        <div class="space-between inner-center">
+          <div class="logo">
+            <a href="index.html"><img src="./assets/images/header/logo.svg" alt="logo"></a>
+          </div>
+          <div class="search-bar ">
+            <form action="#">
+              <div class="inner space">
+                <div class="select-category">
+                  <div class="ui compact selection dropdown  select-ct">
+                    <i class="dropdown icon"></i>
+                    <div class="text">All Category</div>
+                    <div class="menu">
+                      <div class="item">Fruits</div>
+                      <div class="item">Vagetables</div>
+                      <div class="item">Foods</div>
+                      <div class="item">Foods</div>
+                      <div class="item">Foods</div>
+                      <div class="item">Foods</div>
+                      <div class="item">Foods</div>
+                      <div class="item">Foods</div>
+                      <div class="item">Foods</div>
+                      <div class="item">Foods</div>
+                      <div class="item">Foods</div>
+                      <div class="item">Foods</div>
+                      <div class="item">Foods</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui search">
+                  <div class="ui icon input ">
+                    <input class="prompt search-inp" type="text" placeholder="Search for items">
+                    <i class="search icon"></i>
+                  </div>
+                  <div class="results">
+                    a
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="purchase-info space-between">
+            <div class="cart-button space">
+              <span class="cash">( $256 )</span>
+              <a href="#">
+                <div class="cart-info circle"><img src="./assets/images/header/cart-icon.svg" alt="cart-icon"> <span
+                    class="alert-no">5</span></div>
+              </a>
+            </div>
+            <a href="#">
+              <div class="fav-info circle"><img src="./assets/images/header/fav-icon.svg" alt="fav-icon"> <span
+                  class="alert-no">9</span></div>
+            </a>
+            <div class="profile space">
+              <a href="#">
+                <div class="pic"><img src="./assets/images/header/Avatar2.png" alt="Avatar"></div>
+              </a>
+              <p>Abul Kashem</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom ">
+      <div class="ui container ">
+        <div class="header-inner space-between">
+          <div class="bottom-category space">
+            <div class="bar">
+              <img src="./assets/images/header/bar-icon.svg" alt="bar-icon">
+            </div>
+            <div class="select-category">
+              <div class="ui compact selection dropdown  select-ct">
+                <i class="dropdown icon"></i>
+                <div class="text">Select Categorie</div>
+                <div class="menu">
+                  <div class="item">Fruits</div>
+                  <div class="item">Vagetables</div>
+                  <div class="item">Foods</div>
+                  <div class="item">Foods</div>
+                  <div class="item">Foods</div>
+                  <div class="item">Foods</div>
+                  <div class="item">Foods</div>
+                  <div class="item">Foods</div>
+                  <div class="item">Foods</div>
+                  <div class="item">Foods</div>
+                  <div class="item">Foods</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-menu">
+            <div class="ui menu text ">
+              <a href="index.html" class="item text menu-iteam">
+                Home
+              </a>
+              <a href="about.html" class="item menu-iteam">
+                ABOUT
+              </a>
+              <div class="ui pointing dropdown link item">
+                <span class="text menu-iteam">Shop</span>
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                  <div class="header">Categories</div>
+                  <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Clothing</span>
+                    <div class="ui menu">
+                      <div class="header">Mens</div>
+                      <a href="about.html" class="item">jakc</a>
+                      <div class="item">Shirts</div>
+                      <div class="item">Pants</div>
+                      <div class="item">Jeans</div>
+                      <div class="item">Shoes</div>
+                      <div class="divider"></div>
+                      <div class="header">Womens</div>
+                      <div class="item">Dresses</div>
+                      <div class="item">Shoes</div>
+                      <div class="item">Bags</div>
+                    </div>
+                  </div>
+                  <div class="item">Bedroom</div>
+                  <div class="divider"></div>
+                  <div class="header">Order</div>
+                  <div class="item">Status</div>
+                  <div class="item">Cancellations</div>
+                </div>
+              </div>
+              <a href="offer.html" class="item menu-iteam">
+                offer
+              </a>
+              <div class="boundary">
+                <div class="ui text menu example">
+                  <a class="browse item menu-iteam ">
+                    Mega menu
+                    <i class="dropdown icon"></i>
+                  </a>
+                </div>
+                <div class="ui flowing basic admission popup">
+                  <div class="ui three column relaxed divided grid">
+                    <div class="column">
+                      <h4 class="ui header">Business</h4>
+                      <div class="ui link list">
+                        <a class="item">Design &amp; Urban Ecologies</a>
+                        <a class="item">Fashion Design</a>
+                        <a class="item">Fine Art</a>
+                        <a class="item">Strategic Design</a>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <h4 class="ui header">Liberal Arts</h4>
+                      <div class="ui link list">
+                        <a class="item">Anthropology</a>
+                        <a class="item">Economics</a>
+                        <a class="item">Media Studies</a>
+                        <a class="item">Philosophy</a>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <h4 class="ui header">Social Sciences</h4>
+                      <div class="ui link list">
+                        <a class="item">Food Studies</a>
+                        <a class="item">Journalism</a>
+                        <a href="about.html" class="item">Non Profit Management</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="contact.html" class="item menu-iteam">
+                Contact
+              </a>
+            </div>
+          </div>
+          <div class="location_select">
+            <div class="ui compact selection dropdown  select-ct">
+              <i class="dropdown icon"></i>
+              <img src="./assets/images/header/header-location.svg" alt="header-location">
+              <div class="text location-head"> Your Location</div>
+              <div class="menu">
+                <div class="item">Dhaka</div>
+                <div class="item">Dhaka</div>
+                <div class="item">Dhaka</div>
+                <div class="item">Dhaka</div>
+                <div class="item">Dhaka</div>
+                <div class="item">Dhaka</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+                            header end
  ==================================================== -->
+
+
 
 <!-- ====================================================
                             Banner Start
 ==================================================== -->
      <section id="banner">
-          <div class="container">
+          <div class="ui container">
           
                 <div class="items">
                     <div class="overlay"></div>
@@ -142,21 +309,8 @@
                             Category Start
 ==================================================== -->
 <section class="category section-padding">
-    <div class="container">
-        <!-- <div class="heading">
-            <h2>Shop by Category</h2>
-        </div> -->
-        <div class="items category-plate">
-            <div class="overlay"></div>
-            <div class="cards">
-              <div class="c-c c-c-1"><img src="./assets/images/category-card/cat-3.png" alt=""> </div>
-              <div class="c-c c-c-2"><img src="./assets/images/category-card/cat-4.png" alt=""> </div>
-              <div class="c-c c-c-3"><img src="./assets/images/category-card/cat-6.png" alt=""> </div>
-              <div class="c-c c-c-4"><img src="./assets/images/category-card/cat-5.png" alt=""> </div>
-              <div class="c-c c-c-5"><img src="./assets/images/category-card/cat-9.png" alt=""> </div>
-              <div class="c-c c-c-5"><img src="./assets/images/category-card/cat-9.png" alt=""> </div>
-        </div>
-    </div>
+    <div class="ui container">
+       
     </div>
 </section>
 <!-- ====================================================
@@ -168,7 +322,7 @@
 ==================================================== -->
 <section class="best-selling section-padding">
 
-  <div class="container">
+  <div class="ui container">
         <div class="heading">
             <h2>Shop by Category</h2>
             <ul>
@@ -473,7 +627,7 @@
                      Offer Banner Start
 ==================================================== -->
 <section class="offer-banner section-padding">
- <div class="container">
+ <div class="ui container">
    <div class="items">
       <div class="banner">
         <h2 class="bn-h">Make your brekfast healthy & easy</h2>
@@ -503,7 +657,7 @@
 ==================================================== -->
 <section class="todays-best-sale section-padding">
   
-  <div class="container">
+  <div class="ui container">
     <div class="heading">
       <h2>Today's Best Selling Products</h2>
       <a class="view-all"  href="">View All</a>
@@ -613,7 +767,7 @@
 ==================================================== -->
 <section class="hot-sell section-padding">
 
-  <div class="container">
+  <div class="ui container">
     <div class="heading">
       <h2>Hot Sale</h2>
       <a class="view-all"  href="">View All</a>
@@ -743,7 +897,7 @@
         Trend , Recent add , Recent Sale start
 ==================================================== -->
 <section class="recent-add-sale-trend section-padding">
-  <div class="container">
+  <div class="ui container">
      <div class="items">
        <div class="trending">
         <div class="heading">
@@ -992,15 +1146,126 @@
                             footer start
 ==================================================== -->
 
+
+
+<!-- ====================================================
+                            footer start
+==================================================== -->
+
+         <footer class="section-padding">
+          <div class="ui container foot_border">
+            <div class="ui grid">
+              <div class="five column row">
+                <div class=" column">
+                  <div class="foot_left">
+                    <div class="foot_logo">
+                      <img src="./assets/images/footer/foot_logo.svg" alt="foot_logo">
+                    </div>
+                    <p class="foot_motto">Awesome grocery store website template</p>
+                    <div class="foot_contact">
+                      <div class="contact_box space">
+                        <div class="icon">
+                          <img src="./assets/images/footer/location_icon.svg" alt="location_icon">
+                        </div>
+                        <div class="text">
+                          <p>1355 Runway Road , USA</p>
+                        </div>
+                      </div>
+                      <div class="contact_box space">
+                        <div class="icon">
+                          <img src="./assets/images/footer/envelope.svg" alt="envelope">
+                        </div>
+                        <div class="text">
+                          <a class="foot_link foot_mail" href="mailto:muntasor@info.com">muntasor@info.com</a>
+                        </div>
+                      </div>
+                      <div class="contact_box space">
+                        <div class="icon">
+                          <img src="./assets/images/footer/call_icon.svg" alt="call_icon">
+                        </div>
+                        <div class="text">
+                          <a class="foot_link" href="tel:8801 25256454">8801 25256454</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=" column">
+                  <div class="page_list first-page-list">
+                    <ul>
+                      <li><a href="#">Company</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Delivery Information</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Terms & Conditions</a></li>
+                      <li><a href="#">Contact Us </a></li>
+                      <li><a href="#">Support Center</a></li>
+                      <li><a href="#">Careers</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class=" column">
+                  <div class="page_list">
+                    <ul>
+                      <li><a href="#">Account</a></li>
+                      <li><a href="#">Sign In</a></li>
+                      <li><a href="#">View Cart</a></li>
+                      <li><a href="#">My Wishlist</a></li>
+                      <li><a href="#">Track My Order</a></li>
+                      <li><a href="#">Help Ticket</a></li>
+                      <li><a href="#">Shipping Details </a></li>
+                      <li><a href="#">Compare products</a></li>
+                      <li><a href="#">Corporate </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class=" column">
+                  <div class="page_list">
+                    <ul>
+                      <li><a href="#">Become a Vendor</a></li>
+                      <li><a href="#">Affiliate Program</a></li>
+                      <li><a href="#">Farm Business</a></li>
+                      <li><a href="#">Farm Careers </a></li>
+                      <li><a href="#">Our Suppliers</a></li>
+                      <li><a href="#">Accessibility </a></li>
+                      <li><a href="#">Promotions </a></li>
+                      <li><a href="#">Popular </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class=" column">
+                  <div class="page_list">
+                    <ul>
+                      <li><a href="#">Milk & Flavoured Milk</a></li>
+                      <li><a href="#">Butter and Margarine </a></li>
+                      <li><a href="#">Eggs Substitutes</a></li>
+                      <li><a href="#">Farm Careers</a></li>
+                      <li><a href="#">Marmalades</a></li>
+                      <li><a href="#">Sour Cream and Dips</a></li>
+                      <li><a href="#">Tea & Kombucha</a></li>
+                      <li><a href="#">Cheese</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      
+<!-- ====================================================
+                                  footer end
+ ==================================================== -->
+
+
+
+
 <!-- ====================================================
                             footer end
  ==================================================== -->
 
-    <script src="./assets/js/jquery-3.1.1.slim.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./accordion.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+ <script src="./assets/js/jquery-3.1.1.slim.min.js"></script>
+ <script src="./assets/js/semantic.min.js"></script>
+ <script src="./assets/js/script.js"></script>
 
 </body>
 

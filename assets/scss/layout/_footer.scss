@@ -1,4 +1,90 @@
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
 
-@import "../layout/forms";
 
 
+footer {
+    .foot_border{
+        border-bottom: 1px solid $color5;
+    }
+    .foot_left{
+        .foot_logo {
+            width: 173px;
+            height: 67px;
+            margin-bottom: 20px;
+    
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .foot_motto{
+            @include fonts($roboto, 16px, 18px, 400, $color0);
+            width: 230px;
+        }
+        .foot_contact {
+            margin-top: 90px;
+            .contact_box {
+                 align-items: center;
+                 margin-bottom: 12px;
+                .icon {
+                    width: 28px;
+                    height: 28px;
+                    background: $color16;
+                    border-radius: 50%;
+                    position: relative;
+                    margin-right: 25px;
+    
+                    img {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 17px;
+                        height: 17px;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+    
+                .text {
+                    p {
+                        @include fonts($roboto, 12px, 14px, 400, $color0);
+                    }
+                    .foot_link{
+                        @include fonts($roboto, 12px, 14px, 400, $color0);
+                      
+                        &:hover{
+                            color: $color0;
+                 
+                            
+                        }
+                    }
+                    .foot_mail{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .page_list{
+        padding-left: 30px;
+        ul{
+            li{
+                a{
+                    @include fonts($roboto, 14px, 16px, 400, $color0);  
+                    margin-bottom: 20px;
+                    &::hover{
+                        color: $color0;
+                       
+                    }
+                }
+            }
+        }
+    }
+    .first-page-list{
+        margin-top: 40px;
+    }
+    
+
+    
+}

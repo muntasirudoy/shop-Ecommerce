@@ -71,7 +71,6 @@
      }
      .details{
          width: 350px;
-         height: 220px;
          position: absolute;
          bottom:43px;
          left: 50%;
@@ -115,6 +114,7 @@
             }
         }
          .time{
+             margin-bottom: 10px;
              ul{
                 display: flex;
                 justify-content: space-between;
