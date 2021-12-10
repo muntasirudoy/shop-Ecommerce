@@ -36,6 +36,20 @@ body{
     display: flex;
   }
 
+  html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+
+
+
 .section-padding{
       padding: 40px 0;
   }
@@ -45,9 +59,10 @@ body{
     }
  }
 
+ .extra-margin{
+     margin-top: 20px;
+ }
 
-
-// ---------------------------------common css copy and paste on your common scss-----------------
 .space {
     display: flex;
 }
@@ -62,4 +77,3 @@ body{
     
 }
 
-// ---------------------------------common css copy and paste on your common scss-----------------

@@ -2,20 +2,6 @@
 @import "../abstracts/mixin";
 
 
-// roboto typography 400
-
-.hd-top1{
-    @include fonts($roboto,14px,16.41px,400,$color3);
-}
-.hd-top2{
-    @include fonts($roboto,16px,17.58px,500,$color3);
-}
-.sm-r1{
-    @include fonts($roboto,12px,14px,500,$color1);
-}
-
-
-
 
 //  for banner 
 .bh-2{
@@ -33,7 +19,7 @@
 }
 
 .bp-1{
-    @include fonts($roboto,16px,1.6,400,$color3);
+    @include fonts($roboto,16px,1.6,500,$color3);
     margin-top: 20px;
     letter-spacing: .5px;
 }
@@ -41,12 +27,12 @@
 // for banner card1
 
 .bc-h-1{
-    @include fonts($popins,14px,0,500,$color2);
+    @include fonts($popins,14px,0,600,$color2);
     display: inline-block;
     margin-left: 47px
 }
 .bc-p-1{
-    @include fonts($roboto,12px,1.2,400,$color3);
+    @include fonts($roboto,12px,1.2,500,$color3);
     letter-spacing: .5px;
     margin-left: 47px;
 }
@@ -57,7 +43,7 @@
     display: inline-block;
 }
 .bc-p-2{
-    @include fonts($roboto,12px,1.4,400,$color3);
+    @include fonts($roboto,12px,1.4,500,$color3);
     letter-spacing: .5px;
 }
 
@@ -65,7 +51,7 @@
 ////////////////////////
 
 .bn-h{
-    @include fonts($roboto,24px,1.4,500,$color2);
+    @include fonts($roboto,24px,1.4,600,$color2);
     position: absolute;
     top: 25%;
     left: 10%;
@@ -75,7 +61,7 @@
 
 // hote sale
 .hc-h-1{
-    @include fonts($roboto,18px,28px,500,$color2);
+    @include fonts($roboto,18px,28px,600,$color2);
     margin-top: 10px;
 }
 
@@ -84,18 +70,16 @@
     margin-top: 20px;
 }
 
-
 .hc-p-1{
-    @include fonts($roboto,14px,1,400,$color4);
+    @include fonts($roboto,14px,1,500,$color4);
 }
-
 
 // Recent add, sale, trend
 .r-h-1{
-    @include fonts($roboto,16px,28px,500,$color2);
+    @include fonts($roboto,16px,28px,600,$color2);
     margin-top: 7px;
 }
 .r-h-2{
-    @include fonts($roboto,20px,28px,500,$color4);
+    @include fonts($roboto,20px,28px,600,$color4);
     margin-top: 7px;
 }

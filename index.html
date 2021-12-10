@@ -6,15 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dot.shop</title>
-
+    
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--Fonts end-->
+
+
+    <!-- swipe slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- swipe slider -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="./assets/css/semantic.min.css">
+     <link rel="stylesheet" href="./assets/css/modal.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+
+<style>
+   .swiper {
+        width: 100%;
+        padding: 50px 0px;
+     
+      }
+
+      .swiper-slide {
+       background: white;
+        width: 190px;
+        height: 250px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0 15px;
+        border: 1px solid rgb(170, 170, 170);
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+</style>
+
+
 
 </head>
 
@@ -272,20 +306,21 @@
      <section id="banner">
           <div class="ui container">
           
-                <div class="items">
+                <div class="items ">
                     <div class="overlay"></div>
                     <!-- Background Shape -->
                         <img class="shape1" src="./assets/images/Banner/shape1.svg" alt="">
                         <img class="shape2" src="./assets/images/Banner/shape2.svg" alt="">
                     <!-- Background Shape -->
-                  <div class="banner-text">
+                   .ui- 
+                  <div class="banner-text ">
                       <h5 class="bh-2">#1 Best Healthy Salad </h5>
                       <h1 class="bh-1"> <span>Fresh </span>Vegetable with<br> Big Discount</h1>
                       <p class="bp-1">Imagine you don't need a diet because healthy and delicious food for you! we provide <br>
                         healthy and delicious food for you!</p>
                       <a href=""> <img src="./assets/images/Banner/shop.svg" alt="">  Shop Now</a> 
                   </div>
-                  <div class="banner-image">
+                  <div class="banner-image four wide column">
                       <img src="./assets/images/Banner/banner01.svg" alt="">
                       <div class="card1">
                            <div class="icons"> <img src="./assets/images/Banner/card1.svg" alt=""> </div>
@@ -295,8 +330,11 @@
                         <p class="bc-p-2"> Daily Calories </p>
                         <h5 class="bc-h-2">120</h5>
                          <img src="./assets/images/Banner/card2.svg" alt="">
+            
                     </div>
-                      </div>
+                    </div>
+
+
                   </div>
             </div>
           </div>
@@ -310,7 +348,73 @@
 ==================================================== -->
 <section class="category section-padding">
     <div class="ui container">
-       
+      <div class="heading">
+        <h2>Featured Products</h2>
+    </div>
+
+    <div class="category-name">
+         <div class="cn">
+           <div class="circle">
+             <img src="./assets/images/category-card/c1.png" alt="">
+           </div>
+           <p>Category Name</p>
+         </div>
+         <div class="cn">
+           <div class="circle">
+             <img src="./assets/images/category-card/c2.png" alt="">
+           </div>
+           <p>Category Name</p>
+         </div>
+         <div class="cn">
+           <div class="circle">
+             <img src="./assets/images/category-card/c5.svg" alt="">
+           </div>
+           <p>Category Name</p>
+         </div>
+         <div class="cn">
+           <div class="circle">
+             <img src="./assets/images/category-card/c1.png" alt="">
+           </div>
+           <p>Category Name</p>
+         </div>
+         <div class="cn">
+           <div class="circle">
+             <img src="./assets/images/category-card/c4.svg" alt="">
+           </div>
+           <p>Category Name</p>
+         </div>
+    </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            
+          </div>
+          <div class="swiper-slide">
+            
+          </div>
+          <div class="swiper-slide">
+            
+          </div>
+          <div class="swiper-slide">
+            
+          </div>
+          <div class="swiper-slide">
+            
+          </div>
+          <div class="swiper-slide">
+            
+          </div>
+          <div class="swiper-slide">
+            
+          </div>
+          <div class="swiper-slide">
+            
+          </div>
+          <div class="swiper-slide">
+            
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
     </div>
 </section>
 <!-- ====================================================
@@ -359,9 +463,16 @@
         <div class="product-button">
           <a class="wishlist" href=""><i class="far fa-heart"></i></a>
           <a class="add-cart" href=""> <i class="fas fa-cart-plus"></i> Add Cart</a>
-          <a class="quick-view"href=""><i class="fas fa-eye"></i></a>
+          <a class="quick-view "href=""><i class="fas fa-eye"></i></a>
         </div>
       </div>
+    
+  
+     
+
+
+
+
 
       <div class="selling-card">
         <div class="product-review">
@@ -447,7 +558,7 @@
      
       </div>
 
-      <div class="selling-card">
+      <div class="selling-card extra-margin">
         <div class="product-review">
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
@@ -475,7 +586,7 @@
      
       </div>
 
-      <div class="selling-card">
+      <div class="selling-card extra-margin">
         <div class="product-review">
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
@@ -503,7 +614,7 @@
      
       </div>
 
-      <div class="selling-card">
+      <div class="selling-card extra-margin">
         <div class="product-review">
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
@@ -531,7 +642,7 @@
      
       </div>
 
-      <div class="selling-card">
+      <div class="selling-card extra-margin">
         <div class="product-review">
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
@@ -559,7 +670,7 @@
      
       </div>
 
-      <div class="selling-card">
+      <div class="selling-card extra-margin">
         <div class="product-review">
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
@@ -587,7 +698,7 @@
      
       </div>
 
-      <div class="selling-card">
+      <div class="selling-card extra-margin">
         <div class="product-review">
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
@@ -1148,6 +1259,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- ====================================================
                             footer start
 ==================================================== -->
@@ -1155,7 +1278,7 @@
          <footer class="section-padding">
           <div class="ui container foot_border">
             <div class="ui grid">
-              <div class="five column row">
+              <div class="row five column">
                 <div class=" column">
                   <div class="foot_left">
                     <div class="foot_logo">
@@ -1252,9 +1375,14 @@
           </div>
         </footer>
       
+
+
+
+
 <!-- ====================================================
                                   footer end
  ==================================================== -->
+
 
 
 
@@ -1265,8 +1393,15 @@
 
  <script src="./assets/js/jquery-3.1.1.slim.min.js"></script>
  <script src="./assets/js/semantic.min.js"></script>
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <script src="./assets/js/swipe-slider.js"></script>
  <script src="./assets/js/script.js"></script>
 
+
+<script>
+
+
+</script>
 </body>
 
 </html>

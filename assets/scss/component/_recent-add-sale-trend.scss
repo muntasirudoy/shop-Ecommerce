@@ -12,6 +12,8 @@
             .heading{
                 display: flex;
                 justify-content: space-between;
+                font-size: 28px;
+                
                     .next {
                     // $np-w,$np-h,$np-br,$np-bg, $np-b, $np-i-s,$np-i-c 
                     @include next(7px 15px, 5px, $bs-r-1, 1px solid $color4,14px,$color4);
@@ -48,6 +50,7 @@
         .recent-sale{
             width: 32%;
             .heading{
+                @include fonts ($roboto, 28px, 1 , 600, $color2);
                 display: flex;
                 justify-content: space-between;
                 .next-prev{
@@ -91,6 +94,7 @@
             .heading{
                 display: flex;
                 justify-content: space-between;
+                @include fonts ($roboto, 28px, 1 , 600, $color2);
                 .next {
                     // $np-w,$np-h,$np-br,$np-bg, $np-b, $np-i-s,$np-i-c 
                     @include next(7px 15px, 5px, $bs-r-1, 1px solid $color4,14px,$color4);
@@ -98,10 +102,10 @@
                     margin-left: 122px;
                     }
                     .prev {
-                        // $np-w,$np-h,$np-br,$np-bg, $np-b, $np-i-s,$np-i-c 
-                        @include next(7px 15px, 5px, $bs-r-1, 1px solid $color4,14px,$color4);
-                        height: 30px;
-                        }
+                    // $np-w,$np-h,$np-br,$np-bg, $np-b, $np-i-s,$np-i-c 
+                    @include next(7px 15px, 5px, $bs-r-1, 1px solid $color4,14px,$color4);
+                    height: 30px;
+                    }
                 h2{
                 @include heading;
                 border-bottom: 3px solid $color5;
