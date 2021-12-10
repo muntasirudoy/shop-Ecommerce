@@ -1,0 +1,73 @@
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+
+
+
+.featured-product{
+    margin:  0 50px;
+    .heading{
+        h2{
+        @include heading;
+        }
+        }
+    .category-name{
+       display: flex;
+       width: 70%;
+       margin: 20px auto 0;
+       justify-content: space-around;
+       .cn{
+           display: flex;
+           flex-direction: column;
+          align-items: center;
+           .circle{
+                 width: 70px;
+                 height: 70px;
+                 background: rgb(255, 241, 241);
+                 border-radius: 50%;
+                 padding: 5px;
+                 img{
+                     width: 100%;
+                 }
+           }
+          p{  margin-top: 5px;
+              @include fonts ($roboto,16px,16px,500,$color2)
+          }
+           
+       }
+    }
+
+    .swiper {
+        width: 90%;
+        padding: 50px 0px;
+        margin: 0px 50px;
+     
+      }
+
+      .swiper-slide {
+         background: white;
+        width: 190px;
+        height: 250px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0 15px;
+        border: 1px solid rgb(190, 190, 190);
+        padding: 15px;
+        text-align: center;
+        h2{ 
+            
+            @include fonts($roboto, 18px ,20px ,500, black)
+        }  
+        p{ 
+            margin-top: 5px;
+            font-size: 18px;
+            color: $color4;
+            font-weight: 600;
+        }
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+
+
+}

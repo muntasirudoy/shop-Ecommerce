@@ -120,7 +120,7 @@ html * {
   font-size: 44px;
   line-height: 130%;
   font-weight: 700;
-  color: #253d4ed8;
+  color: #213544;
   margin-top: 10px;
 }
 
@@ -139,7 +139,7 @@ html * {
   font-size: 14px;
   line-height: 0;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
   display: inline-block;
   margin-left: 47px;
 }
@@ -159,7 +159,7 @@ html * {
   font-size: 24px;
   line-height: 160%;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
   display: inline-block;
 }
 
@@ -177,7 +177,7 @@ html * {
   font-size: 24px;
   line-height: 1.4;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
   position: absolute;
   top: 25%;
   left: 10%;
@@ -189,7 +189,7 @@ html * {
   font-size: 18px;
   line-height: 28px;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
   margin-top: 10px;
 }
 
@@ -215,7 +215,7 @@ html * {
   font-size: 16px;
   line-height: 28px;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
   margin-top: 7px;
 }
 
@@ -423,7 +423,7 @@ html * {
 
 .header .header-center .inner-center .search-bar .inner .ui.selection.dropdown {
   background: transparent !important;
-  color: #253d4ed8;
+  color: #213544;
 }
 
 .header .header-center .inner-center .search-bar .inner .ui.selection.dropdown:hover {
@@ -515,7 +515,7 @@ html * {
   line-height: 16.41px;
   font-weight: 400;
   color: #7E7E7E;
-  color: #253d4ed8;
+  color: #213544;
   margin-top: 15px;
 }
 
@@ -553,7 +553,7 @@ html * {
   font-weight: 500;
   color: #7E7E7E;
   background: transparent !important;
-  color: #253d4ed8;
+  color: #213544;
   border: 0;
 }
 
@@ -581,7 +581,7 @@ html * {
   font-size: 16px;
   line-height: 18.75px;
   font-weight: 500;
-  color: #253d4ed8;
+  color: #213544;
   text-transform: uppercase;
   margin-left: 25px;
   -webkit-transition: .4s;
@@ -911,11 +911,19 @@ footer .first-page-list {
   }
 }
 
-.category {
+.featured-product {
   margin: 0 50px;
 }
 
-.category .category-name {
+.featured-product .heading h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #213544;
+  margin-bottom: 30px;
+}
+
+.featured-product .category-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -925,7 +933,7 @@ footer .first-page-list {
       justify-content: space-around;
 }
 
-.category .category-name .cn {
+.featured-product .category-name .cn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -938,7 +946,7 @@ footer .first-page-list {
           align-items: center;
 }
 
-.category .category-name .cn .circle {
+.featured-product .category-name .cn .circle {
   width: 70px;
   height: 70px;
   background: #fff1f1;
@@ -946,17 +954,55 @@ footer .first-page-list {
   padding: 5px;
 }
 
-.category .category-name .cn .circle img {
+.featured-product .category-name .cn .circle img {
   width: 100%;
 }
 
-.category .category-name .cn p {
+.featured-product .category-name .cn p {
   margin-top: 5px;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
-  color: #253d4ed8;
+  color: #213544;
+}
+
+.featured-product .swiper {
+  width: 90%;
+  padding: 50px 0px;
+  margin: 0px 50px;
+}
+
+.featured-product .swiper-slide {
+  background: white;
+  width: 190px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 15px;
+  border: 1px solid #bebebe;
+  padding: 15px;
+  text-align: center;
+}
+
+.featured-product .swiper-slide h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  color: black;
+}
+
+.featured-product .swiper-slide p {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #3BB77E;
+  font-weight: 600;
+}
+
+.featured-product .swiper-slide img {
+  display: block;
+  width: 100%;
 }
 
 .best-selling .heading {
@@ -969,7 +1015,7 @@ footer .first-page-list {
   font-family: "Lato", sans-serif;
   font-size: 28px;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
   margin-bottom: 30px;
 }
 
@@ -988,7 +1034,7 @@ footer .first-page-list {
   font-size: 14px;
   line-height: 1;
   font-weight: 500;
-  color: #253d4ed8;
+  color: #213544;
 }
 
 .best-selling .heading ul li .active {
@@ -1105,7 +1151,7 @@ footer .first-page-list {
   font-size: 18px;
   line-height: 28px;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
 }
 
 .best-selling .all-selling-card .selling-card .product-name p {
@@ -1128,7 +1174,7 @@ footer .first-page-list {
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
 }
 
 .best-selling .all-selling-card .selling-card .product-price h5 {
@@ -1280,7 +1326,7 @@ footer .first-page-list {
           box-shadow: 0px 8px 21px #3b3b3b34;
   background: #FFFFFF;
   border: 1px solid #3BB77E;
-  color: #253d4ed8;
+  color: #213544;
 }
 
 .todays-best-sale .heading {
@@ -1296,7 +1342,7 @@ footer .first-page-list {
   font-family: "Lato", sans-serif;
   font-size: 28px;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
   margin-bottom: 30px;
 }
 
@@ -1425,7 +1471,7 @@ footer .first-page-list {
   font-size: 18px;
   line-height: 28px;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
 }
 
 .todays-best-sale .all-selling-card .selling-card .product-name p {
@@ -1448,7 +1494,7 @@ footer .first-page-list {
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
 }
 
 .todays-best-sale .all-selling-card .selling-card .product-price h5 {
@@ -1592,7 +1638,7 @@ footer .first-page-list {
   font-family: "Lato", sans-serif;
   font-size: 28px;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
   margin-bottom: 30px;
 }
 
@@ -1825,7 +1871,7 @@ footer .first-page-list {
   font-family: "Lato", sans-serif;
   font-size: 28px;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
   margin-bottom: 30px;
   border-bottom: 3px solid #D8D8D8;
   padding-bottom: 15px;
@@ -1898,7 +1944,7 @@ footer .first-page-list {
   font-size: 28px;
   line-height: 1;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1938,7 +1984,7 @@ footer .first-page-list {
   font-family: "Lato", sans-serif;
   font-size: 28px;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
   margin-bottom: 30px;
   border-bottom: 3px solid #D8D8D8;
   padding-bottom: 15px;
@@ -2017,7 +2063,7 @@ footer .first-page-list {
   font-size: 28px;
   line-height: 1;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
 }
 
 .recent-add-sale-trend .items .recent-add .heading .next {
@@ -2047,7 +2093,7 @@ footer .first-page-list {
   font-family: "Lato", sans-serif;
   font-size: 28px;
   font-weight: 600;
-  color: #253d4ed8;
+  color: #213544;
   margin-bottom: 30px;
   border-bottom: 3px solid #D8D8D8;
   padding-bottom: 15px;
